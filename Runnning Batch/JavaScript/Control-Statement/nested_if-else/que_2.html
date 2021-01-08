@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        let age, citizen, vid;
+        age = parseInt(prompt("Enter the age"));
+        if (age > 18) {
+            citizen = prompt("If you are 'Indian' enter 'Y'.");
+            if (citizen == 'Y') {
+                vid = prompt("If you have 'Voter Id' enter 'Y'.");
+                if (vid == 'Y') {
+                    console.log("Eligible for Voating");
+                } else {
+                    console.log("Not Eligible No Voter Id");
+                }
+            } else {
+            console.log("Not Eligible Not Indian");
+        }
+          }else {
+            console.log("Not Eligible Less Age");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>A person is eligible for voating if age>18 , being Indian and have Voter Id Card. Write a program to check the
+        eligibility for a voating of a person.</h1>
+</body>
+
+</html>

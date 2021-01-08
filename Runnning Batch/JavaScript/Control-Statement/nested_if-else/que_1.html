@@ -1,0 +1,41 @@
+<!-- 5 Jan 2020 -->
+
+<!-- 
+Nested if-else
+
+if(condition){
+    if(condition){
+        body of nested if
+    }else{
+        body of nested else
+    }
+}else{
+
+} 
+-->
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            let sal, age;
+            age= parseInt(prompt("Enter the age"));
+            if(age>20){
+                sal= parseInt(prompt("Enter the salary"));
+                if(sal>=30000){
+                    console.log("Eligible for loan");
+                }else{
+                    console.log("Not Eligible Less Salary");
+                }
+            }else{
+                console.log("Not Eligible Less Age")
+            }
+        </script>
+        <body>
+            <h1>If a persons age>20 and salary>=30000.He is eligible for loan otherwise not.Write a program to check the eligibility for loan of a person.</h1>
+        </body>
+    </head>
+</html>
