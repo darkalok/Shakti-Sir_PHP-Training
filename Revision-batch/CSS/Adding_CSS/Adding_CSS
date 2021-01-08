@@ -1,0 +1,24 @@
+There are three ways to add CSS in Html file.
+1. External CSS
+2. Internal CSS
+3. Inline CSS(Most High Priority)
+
+1. Inline CSS:
+    <tag style = "property_1: value ; property_2: value" 
+
+2. Internal CSS:
+    In case of Internal CSS we write CSS within same file where HTML element are available within a <style> tag. 
+    <style>
+    selector{
+        property_1: value;
+        property_2: value;
+    }
+    </style>  
+
+3. External CSS:
+    When we develop any web page we are required to use some commmon CSS code in multiple pages. In this case we write one 'CSS file' with '.css' extension and pull all common code from it.
+    <link rel="stylesheet" href="file.css">
+
+Note the priority of CSS in descending order:
+inline>internal>External
+id>class    

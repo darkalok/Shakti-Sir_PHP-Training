@@ -1,0 +1,29 @@
+Combinator : It describe relationship among more than one selector
+ 1. Descendent Selector(Space)
+ 2. Child Slector(>)
+ 3. Adjacent Sibling Selector(+)
+ 4. General Sibling Selecor(~)
+ 
+ 1. Descendent Selector(space):
+    div p {
+        background-color: yellow;
+    }
+    child_1 , child_2, child_3
+
+ 2. Child Selector(>):
+    div>p{
+        background-color: yellow;
+        child_1, child_2
+    } 
+    
+ 3. Adjacent Sibling Selector(+):
+    div+p{
+        backgroud-color: yellow;
+    }   
+    sibling_1
+
+ 4. General Sibling Selector(~):
+    div~p{
+        background-color: yellow;
+    }  
+    sibling_1, sibling_2 
