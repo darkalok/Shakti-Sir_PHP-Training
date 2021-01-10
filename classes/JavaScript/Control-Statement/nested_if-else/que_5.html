@@ -1,0 +1,37 @@
+<!-- 5 jan 2020 -->
+<!-- 
+    Ladder if elseif else
+    
+if(condition){
+    body of if
+}elseif(condition){
+    body of elseif
+}else{
+    body of else
+} 
+-->
+
+<html>
+    <head>
+        <script>
+            let p,q, dis, amt;
+            p= parseInt("Enter the price.");
+            q= parseInt("Enter the quantity.");
+            if(q>=200){
+                dis=20;
+            }elseif(q>=100){
+                dis=10;
+            }elseif(q>=50){
+                dis=50;
+            }else{
+                dis=0;
+            }
+            amt=((p*q)-dis);
+            console.log(amt);
+        </script>
+    </head>
+    <body>
+        <h1>Print the total price of articles after giving discount.</h1>
+    </body>
+
+</html>

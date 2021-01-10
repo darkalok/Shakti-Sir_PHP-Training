@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+          let s1, s2, s3, s4, s5, avg;
+               s1= parseInt(prompt("Enter marks of s1"));
+               s2= parseInt(prompt("Enter marks of s2"));
+               s3= parseInt(prompt("Enter marks of s3"));
+               s4= parseInt(prompt("Enter marks of s4"));
+               s5= parseInt(prompt("Enter marks of s5"));
+               avg= (s1+s2+s3+s4+s5)/5;
+            //    console.log(avg);
+            if(avg>=60){
+                console.log('First Division');
+            }elseif(avg>=45 & avg<60){
+                console.log('Second division');
+            }elseif(avg>=33 & avg<45){
+                console.log('Third Division');
+            }else{
+                console.log('Fail');
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Given marks of five subjects of a student. Find average of marks.<br>
+            if <br> 
+            marks>=60, 1st Division <br>
+            marks>=45 & < 60 , 2nd Division <br>
+            marks>=33,& < 45 , 3rd Division <br>
+            marks< 33 , 1st Division <br></h1>
+    </body>
+</html>
