@@ -1,0 +1,20 @@
+Control Statement:-
+
+1. Conditional Control Statement
+    Ex--- if, if else, ladder if else, nested if else.
+
+2. Looping Control Statement
+    Ex--- for, while, do while.
+
+3. Unconditional Control Statement
+    Ex--- break, continue.
+
+propmt() function:-
+
+1. prompt() method is used to read input from the user.
+2. prompt() method read in the form of ........
+
+TypeCasting:-
+It is  a process by which we convert one type of variable into another type of variable.
+parseInt :- convert into integer.
+parseFloat :- convert into float.

@@ -1,0 +1,7 @@
+JavaScript:-
+>JavaScript is a client-side scripting language introduced by Netscape Corporation.
+>JavaScript is a case sensitive language.
+>By only using HTML, we can not get any functionality so we overcome this problem by combining JavaScript with HTML.
+>JavaScript is a interpreted language.
+>We write JavaScript within <script> tag.
+>Developer tool shortuct:- ctrl+shift+i.
