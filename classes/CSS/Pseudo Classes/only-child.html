@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+          p{
+              text-align: center;
+              border: 1px solid black;
+          }
+          /* div:empty{
+              height: 30px;
+              border: 1px solid red;
+         } */
+          /* p:only-child{
+              background-color: red;
+          } */
+          p:only-of-type{
+              background-color: red;
+          } 
+        </style>
+    </head>
+    <body>
+        <div></div>    <!--//even space should not be there for empty pseudo class to work -->
+
+        <div>
+            <p>Child 1</p>
+            <p>Child 2</p>
+        </div>
+    </body>
+</html>
