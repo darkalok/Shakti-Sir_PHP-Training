@@ -1,0 +1,37 @@
+<!--
+Transition Property in CSS
+
+transition-property
+transition-duration
+transition-delay
+transition-timing-function: ease/ease-in/ease-out/linear
+transition
+-->
+
+<html>
+<head>
+<style>
+.mydiv{
+margin : 100px;
+height: 100px;
+width: 100px;
+background-color: yellow;
+/*
+transition-property: border-radius;
+transition-duration: 2s;
+transition-delay: 2s;
+transition-timing-function: linear;
+*/
+ transition: border-radius 2s 2s linear; 
+}
+
+.mydiv:hover{
+border-radius : 50%;
+}
+</style>
+</head>
+	
+<body>
+<div class= "mydiv"></div>
+</body>
+</html>

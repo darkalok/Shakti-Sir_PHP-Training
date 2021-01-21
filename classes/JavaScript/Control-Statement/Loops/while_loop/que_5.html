@@ -1,0 +1,27 @@
+<!-- Tuesday 12 Jan 2020 -->
+<!-- if the sum of cube of digits of a number is equal to the number itself, it is "Armstrong Number". Ex---153 -->
+
+<html>
+    <head>
+        <script>
+        let num, r, cube, temp, sum=0;
+        num= parseInt(prompt('Enter a number'));
+        temp= num;
+        while(num>0){
+            r= num%10;
+            num= num/10;
+            cube= r*r*r;
+            sum= sum+t;
+        }
+
+        if(sum==temp){
+            console.log('Armstrong Number');
+        }else{
+            console.log('Not Armstrong Number');
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Write a program to check if a given number is 'Armstrong Number' or not.</h1>
+    </body>
+</html>

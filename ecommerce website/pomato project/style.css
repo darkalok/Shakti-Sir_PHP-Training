@@ -1,27 +1,36 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-    /* font-family: 'Poppins', sans-serif; */
+    
 }
+
+
+
 a{
-    text-decoration:none;
+  text-decoration:none;
 }
 body{
     font-family: sans-serif;
 }
-ul{
-    /* list-style: none; */
-    /* border: 3px solid red; */
-    float: right; 
-    width: 70%;
-    /* margin-right: 30px; */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #logo{
+    border: 2px solod black;
+} */
+
+ul{ 
+    /* display: inline-block  */
+    /* width: 70%; */
+    height:100%;
+     /* margin-right: 30px; */
    
     background-color: red;
 }
 ul li{
     display: inline-block;
-    padding: 25px;
     /* margin-top: 0; */
     
 }
@@ -29,22 +38,22 @@ ul li{
     float: right;
 } */
 ul li a{
-    text-decoration: none;
     font-size: 20px;
     color: white;
-    float: right;
-    border: 1px solid black;
+    padding: 15px;
+    /* width:100px; */
+    text-align:center;
     /* padding: 20px; */
     
 }
 
-.nav-menu li a:hover{
+/* .nav-menu li a:hover{
     background-color: #bf3b3b;
-}
+} */
 
 img{
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
     /* display: flex; */
 }
 
@@ -95,6 +104,23 @@ img{
 #banner span{
     /* display: flex;     */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .alok{
     display: inline-block;

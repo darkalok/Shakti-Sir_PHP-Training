@@ -1,0 +1,38 @@
+<!-- Wednesday 13 Jan 2020 -->
+
+<!-- 
+Pseudo Elements
+::first-letter
+::first-line
+::selection
+::after
+::before
+::placeholder
+
+Using :: is not necessary : can also be used but a convention followed by the community. 
+-->
+
+
+<html>
+    <head>
+        <style>
+           #p1::first-letter{
+               border: 1px solid red;
+               padding: 2px;
+           }
+
+           #p2::first-line{
+               background-color: red;
+           }
+
+           p::selection{
+               background-color: green;
+           }
+        </style>
+    </head>
+    <body>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam porro, dolorum quisquam tempora officiis beatae nihil placeat. Consequuntur nostrum harum esse dignissimos reiciendis impedit facere repellendus laudantium! Laborum velit libero inventore cupiditate doloremque minima qui perspiciatis asperiores a delectus modi nemo aperiam quaerat debitis aliquam, impedit aut alias earum nesciunt illo nihil perferendis vero officiis totam! Excepturi, neque fugiat!</p>
+
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam porro, dolorum quisquam tempora officiis beatae nihil placeat. Consequuntur nostrum harum esse dignissimos reiciendis impedit facere repellendus laudantium! Laborum velit libero inventore cupiditate doloremque minima qui perspiciatis asperiores a delectus modi nemo aperiam quaerat debitis aliquam, impedit aut alias earum nesciunt illo nihil perferendis vero officiis totam! Excepturi, neque fugiat!</p>
+    </body>
+</html>

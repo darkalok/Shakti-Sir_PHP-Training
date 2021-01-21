@@ -1,0 +1,17 @@
+Q.1 What is cascading?
+
+Q.2 What is selectors?
+
+Q.3 What is Box-Model?
+
+Q.4 What is difference between pseudo element and pseudo classess?
+
+Q.5 What is z-index?
+
+Q.6 What is d/f b/w id selectorss and class selectors?
+
+Q.7 What is combinator?
+
+Q.8 State states of is <a> tag?
+
+Q.9 How to use one CSS file to another CSS file?
