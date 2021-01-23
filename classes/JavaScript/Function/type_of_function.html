@@ -1,0 +1,27 @@
+<!-- Saturday 23 Jan 2020 -->
+<!-- Hoisting refers to availability of variable and function at the top of current scope.
+Variable Hoisting     Function Hoisting -->
+
+<html>
+    <head>
+        <script>
+            //function declaration
+            //function hoisting possible
+            show();
+            function show(){
+                console.log('Hello');
+            }
+            show();
+            //function expression
+            //function hoisting not possible
+            x();
+            var x= function(){
+                console.log('Good Bye');
+            }
+            x();
+        </script>
+    </head>
+    <body>
+        <h1>Function declaration vs Function expression.</h1>
+    </body>
+</html>

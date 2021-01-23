@@ -1,0 +1,29 @@
+<!-- Thursday 21 Jan 2020 -->
+<!-- 
+    Q. What is closure?
+    A. Closure is a feature in which a function can access the scope of vaiable of its parent  funcion.
+    Note: Method overloading doesn't work in JS.
+ -->
+
+ <html>
+     <head>
+         <script>
+           function outer(){
+               let visit=0;
+               function inner(){
+                   visit++;
+                   console.log(visit);
+               }
+               return inner;
+           }
+           v=outer();
+        //    console.log(v);
+            v();
+            v();
+            v();
+         </script>
+     </head>
+     <body>
+         <h1>Example of closure</h1>
+     </body>
+ </html>
