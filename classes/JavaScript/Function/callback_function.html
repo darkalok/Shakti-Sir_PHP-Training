@@ -1,0 +1,31 @@
+<!-- Saturday 23 Jan 2020 -->
+<!-- Callback function is a function which is passed as a argument to another function.
+Callback function runs when another function has finished. -->
+
+<!-- 
+Q. What is function?
+Q. function with argument?
+Q. function with return value?
+Q. function hoisting?
+Q. function expression and function declaration?
+Q. Callback function?
+Q. closure? 
+-->
+<html>
+    <head>
+        <script>
+            let getAvg= function(total){
+                let avg= total/5;
+                console.log(avg);
+            }
+            function marks(s1, s2, s3, s4, s5, fun){
+                let sum= s1+s2+s3+s4+s5;
+                fun(sum);
+            }
+            marks(80, 80, 80, 60, 90, getAvg );
+        </script>
+    </head>
+    <body>
+        <h1>Callback function</h1>
+    </body>
+</html>

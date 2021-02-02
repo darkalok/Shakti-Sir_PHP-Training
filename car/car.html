@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      height: 100%;
+      width: 100%;
+      background-image: url("sky.png");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highway {
+      height: 200px;
+      width: 500%;
+      position: absolute;
+      display: block;
+      z-index: 1;
+      background-repeat: repeat-x;
+      background-image: url("road.png");
+      bottom: 0;
+      left: 0;
+      right: 0;
+      animation: anim 3s linear infinite;
+    }
+
+    @keyframes anim {
+      100% {
+        transform: translateX(-1400px);
+      }
+    }
+
+    .city {
+      background-image: url("city.png");
+      width: 500%;
+      height: 250px;
+      margin-top: 100px;
+      display: block;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: 200px;
+      background-repeat: repeat-x;
+      animation: city 4s linear infinite;
+    }
+
+    @keyframes city {
+      100% {
+        transform: translateX(-1400px);
+      }
+    }
+
+      .modal {
+        position: absolute;
+        z-index: 2;
+        width: 500%;
+        height: 100vh;
+        display: block;
+        width: 150px;
+        bottom: -400px;
+        left: 300px;
+      }
+
+      @keyframes model {
+        100% {
+          transform: translateY(-1px);
+        }
+
+        50% {
+          transform: translateY(-2px);
+        }
+
+        0% {
+          transform: translateY(0px);
+        }
+      }
+
+      .modal img {
+        width: 300%;
+        animation: model 2s linear infinite;
+      }
+
+      @keyframes wheel {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .wheel {
+        position: absolute;
+        z-index: 1;
+        transform: translateX(-50px);
+        left: 50%;
+        top: 95px;
+      }
+
+      .wheel img {
+        height: 80px;
+        width: 80px;
+        animation: wheel 2s linear infinite;
+      }
+
+      .left {
+        left: 15px;
+        position: absolute;
+      }
+
+      .right {
+        left: 290px;
+        position: absolute;
+      }
+
+      h1 {
+        color: black;
+        font-weight: bolder;
+        font-size: large;
+      }
+  </style>
+</head>
+
+
+
+<body>
+  <div class="main">
+    <marquee bgcolor="#00ff00">
+      <div class="city"></div>
+      <div class="highway"></div>
+      <div class="modal">
+        <img src="car.png">
+        <div class="wheel">
+          <img src="wheel.png" class="left">
+          <img src="wheel.png" class="right">
+        </div>
+      </div>
+</body>
+
+</html>

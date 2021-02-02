@@ -1,0 +1,68 @@
+<!-- Monday 25 Jan 2021 -->
+ <!-- 
+ Animation Property
+ animate-name:
+ animation-duration:
+ animation-delay:
+ animation-iteration-count:
+ animation-timing-function:
+ animation-direction: alternate/reverse/alternate-reverse
+ -->
+
+<html>
+<head>
+  <style>
+    @keyframes animate {
+      from {}
+
+      to {
+        width: 400px;
+      }
+    }
+
+    .mydiv1 {
+      margin: 80px;
+      height: 100px;
+      width: 200px;
+      background-color: red;
+      animation-name: animate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate-reverse;
+    }
+
+
+    .mydiv2 {
+      margin: 80px;
+      height: 100px;
+      width: 200px;
+      background-color: red;
+      animation-name: animate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-direction: alternate-reverse;
+    }
+
+    .mydiv3 {
+      margin: 80px;
+      height: 100px;
+      width: 200px;
+      background-color: red;
+      animation-name: animate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-out;
+      animation-direction: alternate-reverse;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mydiv1"></div>
+  <div class="mydiv2"></div>
+  <div class="mydiv3"></div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            let num, sqr, r, sum=0;
+            num= parseInt(prompt("Enter a number"));
+            sqr= num*num;
+            while(sqr>0){
+                r= sqr%10;
+                sqr= parseInt(sqr/10);
+                sum= sum+r;
+            }
+
+            if(num==sum){
+                console.log('Neon Number');
+            }else{
+                console.log('Not Neon Number');
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Write a program to check if the given number is neon number or not.</h1>
+    </body>
+</html>
