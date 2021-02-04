@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <style>
+        @keyframes animate {
+
+            0% {}
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .rotate-box {
+            text-align: center;
+        }
+
+        .rotate-box p {
+            display: inline-block;
+            font-size: 40px;
+            background-color: red;
+            color: white;
+            border: 1px solid black;
+            margin-left: 2px;
+            padding: 3px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px black;
+            animation: animate 2s infinite alternate;
+            animation-play-state: paused;
+            
+            /* animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
+            animation-fill-mode: both; */
+        }
+
+        p:hover {
+            animation-play-state: running;
+        }
+
+        
+    </style>
+
+<body>
+    <div class="rotate-box">
+        <p>W</p>
+        <p>E</p>
+        <p>L</p>
+        <p>C</p>
+        <p>O</p>
+        <p>M</p>
+        <p>E</p>
+    </div>
+</body>
+</head>
+
+</html>
