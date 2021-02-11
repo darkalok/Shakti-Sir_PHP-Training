@@ -27,7 +27,7 @@ nav ul li a{
  
 }
 
-a:hover{
+nav li:hover{
     background-color: red;
 }
 
@@ -42,46 +42,41 @@ a:hover{
      cursor: pointer;
      display: none;  
 }
+.mob-nav li{
+    text-align: center;
+}
+.mob-nav li :hover{
+    display: block;
+    background-color: red;
+    font-size: 20px;
+}
 
 .mob-nav{
-    list-style-type: none;
-    background-color: black;
+    display: inline-block;
+    margin: 20px ;
+    background-color:black;
     width: 200px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* transform: translateX(-200px); */
-    /* transition: transform 2s; */
-}
-
-.mob-nav ul{
+    height: 100vh;
     list-style-type: none;
-    /* margin: 5px; */
+    clear: both;
+    display: none;
+    
 }
-
-.mob-nav  a{
-    display: block;
-    /* font-size: 20px; */
+.mob-nav li a {
     text-decoration: none;
     color: white;
-    padding: 4px;
-    text-align: center;
-    clear: both;
-
+    font-size: 20px;
+    
+    /* text-align: center; */
 }
 
 .close{
     color: white;
     float: right;
-    cursor: pointer;
+    
 }
 
-@media screen and (max-width:700px){
-.menu{
-    display: block;
-}
-nav ul{
-    display: none;
- }
-}
+
+
+
+
