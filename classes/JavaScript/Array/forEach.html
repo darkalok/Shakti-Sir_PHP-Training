@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            let a = [10,20,30,40,50];
+            for(let x in a){
+                console.log(a[x]);
+            }
+
+            a.forEach(function(num,index){
+                console.log(num,index);   // break & continue doesn't work
+            });
+            
+            for(let y of a){
+                console.log(y); //break & continue works
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Differet ways of writing for loop in JavaScript.</h1>
+    </body>
+</html>

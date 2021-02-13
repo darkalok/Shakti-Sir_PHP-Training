@@ -1,0 +1,66 @@
+<!-- 
+   linear-gradient 
+   repeating-linear-gradient 
+   radial-gradient 
+   repeating-radial-gradient 
+-->
+
+
+
+<html>
+    <head>
+        <style>
+       div{
+           height: 150px;
+           width: 300px;
+           margin:auto;
+           margin-bottom: 20px;
+           color: white;
+           text-align: center;
+           line-height: 150px;
+       }
+
+       .div1{
+           background-image: linear-gradient( red   ,green); 
+           /* BY default to bottom*/
+       }
+     
+       .div2{
+           background-image: linear-gradient(to bottom,red,green);
+       }
+       .div3{
+           background-image: linear-gradient(to top, red, green)
+        }
+       .div4{
+           background-image: linear-gradient(to right,red,green);
+       }
+       .div5{
+           background-image: linear-gradient(to left, red, green)
+       }
+       .div6{
+           background-image: linear-gradient(to top left,red,green);
+       }
+       .div7{
+           background-image: linear-gradient(to top right, red, green)
+       }
+       .div8{
+           background-image: linear-gradient(to bottom right,red,green);
+       }
+       .div9{
+           background-image: linear-gradient(to bottom left, red, green)
+       } 
+       
+        </style>
+    </head>
+    <body>
+        <div class="div1">By default</div>
+        <div class="div2">to bottom</div>
+        <div class="div3">to top</div>
+        <div class="div4">to right</div>
+        <div class="div5">to left</div>
+        <div class="div6">to top left</div>
+        <div class="div7">to top right</div>
+        <div class="div8">to bottom right</div>
+        <div class="div9">to bottom left</div>
+    </body>
+</html>
