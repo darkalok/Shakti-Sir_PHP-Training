@@ -1,12 +1,32 @@
+
+<!-- 
+position property specifies the positioning method for an element.
+
+position: fixed/absolute/relative/sticky/static.
+
+fixed: positioned relative to viewport.
+
+absolute: positined w.r.t. its parent.
+
+relative: positioned relative to its normal postion.
+
+sticky: position toggle b/w relative and fixed depending on the scroll positin.
+
+static: default value of postion for each element.
+ -->
 <html>
     <head>
         <style>
-         .outer-box{
+         .box1{
              height: 100px;
              width: 100px;
              background-color: black;
+             margin-left: 200px;
+             margin-top: 100px;
+             position: relative;
+            
          }
-         .inner-box{
+         .box2{
              height: 100px;
              width: 100px;
              background-color: red;
@@ -18,7 +38,12 @@
         </style>
     </head>
     <body>
-        <div class="outer-box"></div>
-        <div class="inner-box"></div>
+        <!-- <div class="box1"></div>
+        <div class="box2"></div> -->
+
+        <div class="box1">
+            <div class="box2"></div>
+        </div>
+       
     </body>
 </html>

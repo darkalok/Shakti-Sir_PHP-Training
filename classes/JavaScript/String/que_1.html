@@ -1,0 +1,44 @@
+<body>
+    <h1>
+        Find howmany times 'is' has come in the given string "this is a pen is is"
+    </h1>
+    <script>
+        //    Method 1 : using built-in function 
+
+        // let st = "this is a pen is is";
+        // let fnd = 'is';
+        // let count = 0;
+        // let word = st.split(' ');
+        // for (w of word) {
+        //     if (w == fnd) {
+        //         count++;
+        //     }
+        // }
+        // console.log(count);
+
+       //    Method 2 : w/o using built-in function 
+       
+       let st = "this is a pen is is";
+       let fnd = 'is';
+       let word = "";
+       let count = 0;
+       let i;
+        
+       for ( i= 0; i<st.length; i++){
+           if(st.charAt(i)!=' '){
+           word = word + st.charAt(i);
+
+           }
+           if(st.charAt(i)==' ' || i ==(st.length-1) ){           // 
+               if(word==fnd){
+                   count++;
+               }
+               word="";
+           }
+       }
+       console.log(st);
+       console.log(count);
+
+
+    </script>
+</body>

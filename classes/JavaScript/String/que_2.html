@@ -1,0 +1,53 @@
+<body>
+    <h1>
+        Find the word 'is' from the given string and replace it with the word 'are'.
+    </h1>
+    <script>
+        //    Method 1 : using built-in function 
+        // let st = "this is a pen is is";
+        // let fnd = 'is';
+        // let rpl = 'are';
+        // let word = st.split(' ');
+        // let i;
+        // for (i = 0; i < word.length; i++) {
+        //     if (word[i] == fnd) {
+        //         word[i] = rpl
+        //     }
+        // }
+        // let newSt = word.join(' ');
+        // console.log(newSt);
+
+
+        //    Method 2 : w/o using built-in function 
+
+        let st = "this is a is pen";
+        let fnd = 'is';
+        let rpl = 'are';
+        let cs = "";
+        let word = "";
+        let i;
+        for (i = 0; i < st.length; i++) {
+            if (st.charAt(i) != ' ') {
+                // word1= word1 + st.charAt(i);
+                word = word + st.charAt(i);
+
+            }
+            if (st.charAt(i) == ' ' || i==st.length-1) {
+                
+                if (word != fnd) {
+                    cs = cs+ word + ' ';
+                    // console.log(word1);
+                } 
+                
+                if(word==fnd) {
+                    cs = cs +rpl + ' '
+                    // console.log(word1);
+                }
+                word = ""
+            }
+        }
+        console.log(st);
+        console.log(cs);
+
+    </script>
+</body>

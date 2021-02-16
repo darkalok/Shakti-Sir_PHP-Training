@@ -12,30 +12,32 @@
             line-height: 150px;
         }
 
-        .div1{
-            background-image: repeating-linear-gradient(red 5%,green 10%,blue 15%);
-         /* % of colors should be passed in an increasing order from left to right ---Basant Law */
+        .div1 {
+            background-image: repeating-linear-gradient(to top right, red 5%, green 10%, blue 15%);
+            /* % of colors should be passed in an increasing order from left to right ---Basant Law */
 
         }
-        .div2{
-            background-image: repeating-linear-gradient(red 25%,green 10%,blue 15%);
-         /* % of colors doesn't follow Basant law so the most right color should  be applied  throughout the div*/
+
+        .div2 {
+            background-image: repeating-linear-gradient(red 25%, green 10%, blue 15%);
+            /* % of colors doesn't follow Basant law so the most right color should  be applied  throughout the div*/
 
         }
-        .div3{
-            background-image: repeating-linear-gradient(red 5%,green 5%,blue 5%);
+
+        .div3 {
+            background-image: repeating-linear-gradient(red 5%, green 5%, blue 5%);
             /* % of colors should not be equal. right most color will be applied */
         }
-        .div4{
-            background-image: repeating-linear-gradient(red 5%,green 15%,blue 5%);
+
+        .div4 {
+            background-image: repeating-linear-gradient(red 5%, green 15%, blue 5%);
             /* Since % of blue < % of green it will not be applied , but % of green and red follows increasing Basant L/aw i.e. % of red< % of green so it will be applied*/
         }
 
-        .div5{
-            background-image: repeating-linear-gradient(red 5%,green 15%,blue 20%);
+        .div5 {
+            background-image: repeating-linear-gradient(red 5%, green 15%, blue 20%);
             /* % of colors should not be equal */
         }
-
     </style>
 </head>
 

@@ -1,0 +1,33 @@
+<body>
+    <h1>Check wheter two arrays have eqaul and same no. of elements or not.</h1>
+    <script>
+
+        function arrEquality() {
+            let a1 = [10, 10, 20 , 40];
+
+            let a2 = [20, 20, 10, 40];
+        
+            let i, j;
+            if (a1.length == a2.length) {
+                for (i = 0; i < a1.length; i++) {
+                    for (j = 0; j < a2.length; j++) {
+                        if (a1[i] == a2[j]) {
+                            break;
+                        }
+                        if (a1[i] != a2[j] && j == a2.length - 1) {
+                            return false;
+                        }
+                    }
+
+                }
+                return true;
+
+            } else {
+                return false;
+            }
+    
+         }
+       let k = arrEquality();
+       console.log(k);
+    </script>
+</body>

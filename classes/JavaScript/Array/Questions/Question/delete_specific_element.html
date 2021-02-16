@@ -1,0 +1,19 @@
+<body>
+    <h1>Delete specific element like 40 from the given array.
+        [10,40,20,30,40,50]. 
+    </h1>
+    <script>
+        let a = [10,40,20,30,40,50]
+        let fnd = 40;
+        let a2 = [];
+        let i;
+        for(i=0; i<a.length; i++){
+            if(a[i]!=fnd){
+                a2.push(a[i])
+            }else{
+                continue;
+            }
+        }
+        console.log(a2);
+    </script>
+</body>

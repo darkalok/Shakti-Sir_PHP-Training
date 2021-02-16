@@ -1,7 +1,0 @@
-position property specifies the positioning method for an element.
-position: fixed/absolute/relative/sticky/static.
-fixed: positioned relative to viewport.
-absolute: positined w.r.t. its parent.
-relative: positioned relative to its normal postion.
-sticky: position toggle b/w relative and fixed depending on the scroll positin.
-static: default value of postion for each element.
