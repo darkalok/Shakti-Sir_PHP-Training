@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+         body{
+               margin:0px;
+               padding:0px;
+
+              }
+        ul{
+          margin: 0px;
+          padding:0px;
+           }
+       .my_menu{
+              position:absolute;
+               width:100%;
+                height:auto;
+                 background-color: rgba(0,0,0,0.3);
+                    }
+
+                    .menu li{
+                        list-style:none;
+                          width:170px;
+                        height:40px;
+                       margin:5px;
+                      text-align:center;
+                     line-height: 40px;
+                         float:left;
+                        }
+                        .menu li a:hover{
+                          background-color:rgba(0,0,0,0.3);
+                               font-size:25px;
+                               }
+                            .menu li a:hover{
+                             color:aqua;
+                                  }
+                              .menu li a{
+                           color:whitesmoke;
+                           display:block;
+                       text-decoration:none;
+                            }
+                       .menu ul li{
+                          margin:0px;
+                      background-color: rgba(0,0,0,0.3);
+                        }
+                         .menu ul{
+                      display:none;
+                            }
+                      .menu li:hover ul{
+                           display:block;
+                     font-size: small;
+                            }
+                            .deep_menu{
+                                padding:10px;
+                            }
+   
+         
+        </style>
+    </head>
+    <body>
+        <div class="my_menu">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">classes</a>
+                <ul>
+                    <li><a href="#">java</a></li>
+                    <li><a href="#">c++</a></li>
+                    <li><a href="#">python</a></li>
+                     <li><a href="#">Web devlopment</a>
+                       <ul class="deep_menu">
+                            <li><a href="#">html</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">javascript</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                </ul>
+        </div>  
+    </body>
+</html>

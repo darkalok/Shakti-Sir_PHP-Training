@@ -1,0 +1,42 @@
+<!-- Wednesday 17 Feb 2021 -->
+<!--
+Event:-
+Event provides dynamic interface to an HTML element.
+Event is a signal which indicates something happened on the browser.
+Response of an event is known as Event Handler. 
+-->
+<html>
+
+<head>
+    <script>
+        function sum() {
+            let a, b, c;
+            a = parseInt(f.value);
+            b = parseInt(s.value);
+            console.log(a,b);
+            c = a + b;
+            r.value = c;
+            console.log(r.value);
+        }
+    </script>
+</head>
+
+<body>
+    First Number
+    <input type="text" id="f" name="f">
+    <br>
+
+    Second Number
+    <input type="text" id="s" name="s">
+    <br>
+
+    Result
+    <input type="text" id="r" name="r">
+    <br>
+
+    <input type="button" value="Sum" onclick="sum()">
+    <br>
+
+</body>
+
+</html>

@@ -1,48 +1,64 @@
 <html>
-    <head>
-        <style>
-          *{
-              margin: 0;
-              padding: 0;
-          }
-          body{
-              border: 5px solid red;
-              height: 800px;
-          }
-          .parent{
-              border: 5px solid black;
-          }
-          .c1, .c2, .c3, .c4, .c5, .c6{
-              border: 3px solid orange;
-              text-align: center;
-          }
-           .c1{
-              top: 0px;
-              left: 0px; 
-              position: fixed; 
-              /* position: absolute; */
-          } 
-           /* .c3{
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            border: 5px solid red;
+            height: 800px;
+        }
+
+        .box1 {
+            border: 5px solid black;
+            /* position: relative; */
+        }
+
+        .c1,
+        .c2,
+        .c3,
+        .c4,
+        .c5,
+        .c6 {
+            height: 50px;
+            border: 3px solid orange;
+            text-align: center;
+        }
+
+        .c1 {
+            /* position: fixed; */
+            position: relative;
+            /* position: absolute; */
+            top: 0px;
+            left: 0px;
+        }
+
+        /* .c3{
             position: relative;
             top: 20px;
            } */
-           .box{
-               position: sticky;
-               top: 20px;
-           }
-        </style>
-    </head>
-    <body>
-        <div class="parent">
-            <div class="c1">Child_1</div>
-            <div class="c2">Child_2</div>
-            <div class="c3">Child_3</div>
-        </div>
+        .box2 {
+            position: sticky;
+            top: 20px;
+        }
+    </style>
+</head>
 
-        <div class="box">
-            <div class="c4">Child_4</div>
-            <div class="c5">Child_5</div>
-            <div class="c6">Child_6</div>
-        </div>
-    </body>
+<body>
+    <div class="box1">
+        <div class="c1">Child_1</div>
+        <div class="c2">Child_2</div>
+        <div class="c3">Child_3</div>
+    </div>
+
+    <div class="box2">
+        <div class="c4">Child_4</div>
+        <div class="c5">Child_5</div>
+        <div class="c6">Child_6</div>
+    </div>
+</body>
+
 </html>
