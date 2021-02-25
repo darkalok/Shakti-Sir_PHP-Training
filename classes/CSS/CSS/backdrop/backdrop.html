@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <style>
+      .backdrop{
+          height: 100vh;
+          width: 100vw;
+          background-color: rgba(0,0,0,0.7);
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          z-index: -1;
+          /* display: none; */
+      }
+      .modal{
+          height: 200px;
+          width: 350px;
+          border: 1px solid black;
+          margin: auto;
+          box-shadow: 3px 3px 5px black;
+          margin-top: 250px;
+          background-color: aliceblue;
+          /* z-index: 1000; */
+          /* display: none; */
+      }
+      .modal-body{
+          margin-top: 70px;
+          text-align: center;
+
+      }
+      .text_style{
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bolder;
+          text-transform: capitalize;
+      }
+      .btn{
+          height: 30px;
+          width: 70px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          color: aliceblue;
+          background-color: red;
+          border-radius: 10%;
+
+      }
+    </style>
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <div class="modal-body">
+            <p class="text_style">are you sure to delete the account</p>
+            <button class="btn text_style">ok</button>
+            <button class="btn text_style">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

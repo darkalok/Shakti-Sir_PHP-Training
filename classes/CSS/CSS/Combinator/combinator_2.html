@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+p{
+    border: 1px solid black;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    text-transform: capitalize;
+    }
+div p{
+    background-color: red;
+    /* descedent selector */
+}
+div>p{
+    background-color: hotpink;
+    /* child selector */
+}
+div~p{
+    background-color: gray
+    /* general sibling selector */
+}
+div+p{
+    background-color: green;
+    /* adjacent sibling selector */
+}
+    </style>
+</head> 
+
+<body>
+    <div>
+        <p class="child_1">child 1</p>
+        <p class="child_2">child 2</p>
+        <p class="child_3">child 3</p>
+        <span>
+            <p class="child_4">child 4</p>
+        </span>
+    </div>
+    <p>sibling 1</p>
+    <p>sibling 2</p>
+    
+    <span> <p>sibling 3 </p> </span>
+     <p>sibling 4</p>
+     <p>sibling 5</p>
+    
+
+</body>
+
+</html>
