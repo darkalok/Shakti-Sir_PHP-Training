@@ -1,0 +1,37 @@
+<!-- 23 Feb 2021 -->
+<!--
+Document Object Model
+Dom is an interface for an HTML element
+When the browser is loaded on the browser, browser creates a DOM(Document Object Model)
+DOM constructs the structure of a web page in the form of tree
+With help of DOM, JS can change structure of a web page
+For Ex
+adding styling
+remove element
+add element etc. 
+-->
+
+<html>
+
+<head>
+
+    <script>
+        function change(){
+            let d=document.getElementById("myDiv");
+            console.log(d.innerHTML);
+            d.innerHTML="<b> Hi...</b>";
+            // d.innerText="<b> Hi...</b>";
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div id="myDiv">Welcome</div>
+<button onClick="change();">Click</button>
+
+
+</body>
+
+</html>
