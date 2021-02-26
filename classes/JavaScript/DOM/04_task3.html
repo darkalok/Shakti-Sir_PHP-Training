@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script>
+        let col;
+        function getColor(c) {
+            col = c.style.backgroundColor;
+        }
+        function myPost() {
+            let status = document.getElementById("status").value;
+            let op = document.getElementById("op");
+            op.style.backgroundColor = col;
+            op.style.height = "200px";
+            op.style.width = "200px"
+            op.style.margin = "auto";
+            op.style.color = "white";
+            op.style.lineHeight = "200px";
+            op.style.textAlign = "center";
+            op.innerHTML = status;
+        }
+    </script>
+    <style>
+        .box {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="status" />
+    <button onclick="myPost()">Upload</button>
+    <br><br>
+    <div class="box" style="background-color: red;" onclick="getColor(this);"></div>
+    <div class="box" style="background-color:green;" onclick="getColor(this);"></div>
+    <div id="op"></div>
+</body>
+
+</html>

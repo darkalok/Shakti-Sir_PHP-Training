@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        let imgArray = ["a.jpg", "b.jpg", "c.png"];
+        let i = 0;
+        function prev(){
+            i--;
+            if(i==-1){
+                i=2;
+            }
+            t.src=imgArray[i];
+        }
+        function next(){
+            i++;
+            if(i==3){
+                i=0;
+            }
+            t.src=imgArray[i];
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <input type="button" value="<" onclick="prev();">
+        <img src="a.jpg" height="200" width="200" id="t" name="t">
+        <input type="button" value=">" onclick="next();">
+    </center>
+</body>
+
+</html>

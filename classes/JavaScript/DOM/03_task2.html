@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function change(){
+            let data = document.getElementById("data");
+            let op = document.getElementById("op");
+            let output = op.innerHTML;
+            output+= "<option selected>" + data.value + "</option>"
+            op.innerHTML = output;
+            data.value = "";
+        }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="data"/>
+        <input type="button"  value="ok" onclick="change();">
+        <br><br>
+        <select  id="op"></select>
+    </body>
+</html>
