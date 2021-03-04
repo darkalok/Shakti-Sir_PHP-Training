@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+    <script>
+        let appList = document.getElementsByClassName("app");
+        let appContainer = document.getElementsByClassName("container");
+        function checkAll(ch) {
+            for (item of appList) {
+                item.checked = ch.checked;
+            }
+
+        }
+
+        function deleteItem() {
+            for (index in appList) {
+                if (appList[index].checked) {
+                    appContainer[index].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="checkbox" onclick="checkAll(this);" /> CheckAll
+
+    <div class="container">
+        <input type="checkbox" class="app" /> Facebook
+    </div>
+
+    <div class="container">
+        <input type="checkbox" class="app" /> Youtube
+    </div>
+    <br> <br>
+
+    <button onClick="deleteItem();">Delete Checked</button>
+
+</body>
+
+</html>
