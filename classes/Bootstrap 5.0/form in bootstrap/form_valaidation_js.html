@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 offset-md-4 mt-5">
+
+                <form class="needs-valaidation"> 
+                    <div>
+                        <input type="text " class="form-control" required>
+                        <div class="invalid-feedback">Wrong Input</div>
+                    </div>
+                    <input type="submit" value="submit" class="btn btn-outline-danger mt-2">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let forms = document.querySelectorAll(".needs-validation");
+    forms[0].addEventListener("submit",function(event){
+        if(!form[0].checkvalidity()){
+            event.preventDefault();
+        }
+        form[0].classList.add("was-validated")
+    });
+</script>
+
+</html>
