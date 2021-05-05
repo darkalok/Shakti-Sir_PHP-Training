@@ -1,0 +1,15 @@
+<body>
+    <h1>Given two strings, you need to tell if they contain same characters or not.</h1>
+    <script>
+function compStr(str1, str2){
+    let x=  str1.toLowerCase().split('').sort().join('');
+    let y=  str2.toLowerCase().split('').sort().join('');
+    if(x==y){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(compStr("amit", "aIMt"))
+    </script>
+</body>

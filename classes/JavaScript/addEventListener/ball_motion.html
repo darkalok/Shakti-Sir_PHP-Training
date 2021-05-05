@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            #ball{
+                height: 100px;
+                width: 100px;
+                background-color: green;
+                border-radius: 50%;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ball"></div>
+    </body>
+    <script>
+        let ball = document.getElementById("ball");
+        let tPos = 0;
+        let lPos = 0;
+        window.addEventListener("keydown", function(e){
+            if(e.keyCode==37){
+                lPos=lPos-2;
+            }
+            if(e.keyCode==38){
+                tPos=tPos-2;
+            }
+            if(e.keyCode==39){
+                lPos=lPos+2;
+            }
+            if(e.keyCode==40){
+                tPos=tPos+2;
+            }
+            ball.style.left=lPos+"px"
+            ball.style.top=tPos+"px"
+        });
+    </script>
+
+</html>

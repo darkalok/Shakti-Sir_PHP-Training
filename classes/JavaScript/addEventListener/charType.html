@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            #myid{
+                height: 150px;
+                width: 150px;
+                border: 5px solid black;
+                text-align: center;
+                font-size: 50px;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id ="myid"></div>
+    </body>
+    <script>
+        let charBox= document.getElementById("myid");
+        window.addEventListener("keydown",function(e){
+            charBox.innerHTML=e.key;
+        });
+
+        //To get the whole string
+        // let st="";
+        // window.addEventListener("keydown",function(e){
+        //     st= st+e.key
+        //     charBox.innerHTML=st;
+        // });
+    </script>
+</html>

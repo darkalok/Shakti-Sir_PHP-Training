@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <div id="myid">Welcome</div>
+        <button id="btn">click</button>
+    </body>
+    <script>
+        let btn = document.getElementById("btn");
+        let d = document.getElementById("myid");
+        btn.addEventListener("click", function(){
+            d.style.background="red";
+        });
+        btn.addEventListener("mouseover",function(){
+            d.style.background="green";
+        });
+
+    </script>

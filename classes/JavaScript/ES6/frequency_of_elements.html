@@ -1,0 +1,15 @@
+<body>
+    <h1>Tell the frequency of elements in an array in json format.</h1>
+    <script>
+        let a = ['a', 'b', 'c', 'a', 'b', 'b', 'f', 'x', 'b'];
+        let count = {};
+        a.forEach(function( item){
+            if(count[item]){
+                count[item]++;
+            }else{
+                count[item]=1;
+            }
+        });
+        console.log(count);
+    </script>
+</body>

@@ -1,0 +1,39 @@
+<html>
+       <head>
+           <style>
+              .list{
+                  list-style-type:decimal
+              }
+            </style>
+       </head>
+       <body>
+               <ul class="sub">
+                     <li>react</li>
+                     <li>react native</li>
+                     <li>javascript</li>
+                     <li>android</li>                    
+               </ul>
+               <button id="addbtn">addClass</button>
+               <button id="removebtn">removeClass</button>
+              <button id="addrem">add/removeClass</button>
+             <script>
+               let btn=document.querySelector("#addbtn");
+               let sub=document.querySelector(".sub");
+                let addrem=document.querySelector("#addrem");
+              
+                let removebtn=document.querySelector("#removebtn");
+                        
+                 addbtn.addEventListener("click", function(){
+                        sub.classList.add("list"); 
+                    });
+                 removebtn.addEventListener("click", function(){
+                        sub.classList.remove("list"); 
+                    });
+           
+    addrem.addEventListener("click", function(){
+                        sub.classList.toggle("list"); 
+                    });
+              
+            </script>
+       </body>
+</html>

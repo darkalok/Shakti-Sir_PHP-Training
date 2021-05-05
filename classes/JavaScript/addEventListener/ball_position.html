@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+             #ball{
+                height: 100px;
+                width: 100px;
+                background-color: green;
+                border-radius: 50%;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ball"></div>
+    </body>
+    <script>
+        let ball = document.getElementById("ball");
+        window.addEventListener("click",function(e){
+            ball.style.left= e.clientX;
+            ball.style.top=e.clientY;
+        });
+    </script>
+</html>
