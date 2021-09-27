@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ball</title>
+   <style>
+     #myid{
+        margin: auto;
+        height: 150px;
+        width: 350px;
+        border: 5px solid black;
+        text-align: center;
+        font-size: 50px;
+     }
+   </style>
+</head>
+<body>
+   <div id="myid"></div>
+</body>
+<script>
+   let charBox = document.getElementById("myid");
+   let st="";
+   window.addEventListener("keydown",function(e){
+      st=st+e.key;
+      charBox.innerHTML = st;  // keycode
+   });
+</script>
+</html>

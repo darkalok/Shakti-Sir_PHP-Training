@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+   <style>
+      ul{
+         list-style: none;
+         text-align: center;
+      }
+      li{
+         display: inline-flex;
+         font-size: 14px;
+         color: tomato;
+         font-weight: bolder;
+         margin: 5px;
+         cursor: pointer;
+      }
+   </style>
+</head>
+<body>
+   <ul>
+      <li>W</li>
+      <li>E</li>
+      <li>L</li>
+      <li>C</li>
+      <li>O</li>
+      <li>M</li>
+      <li>E</li>
+   </ul>
+</body>
+<script>
+   $(document).ready(function(){
+      $("li").mouseover(function(){
+         $(this).animate({
+            fontSize:'30px'
+         },1000);
+      })
+      $("li").mouseout(function(){
+         $(this).animate({
+            fontSize:'14px'
+         },1000);
+      })
+   })
+</script>
+</html>

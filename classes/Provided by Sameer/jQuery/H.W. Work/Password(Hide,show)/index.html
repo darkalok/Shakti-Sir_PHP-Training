@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+</head>
+<body>
+   <input type="password" name="" id="pass" />
+   <br/>
+   <input type="checkbox" value="yes" name="" id="check">
+   <p id="hide_show">show</p>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#check").click(function(){
+         if($("#check").val() == 'yes'){
+             $("#pass").attr("type","text");
+             $("#check").val("no");
+             $("#hide_show").html("hide");
+         }else{
+            $("#pass").attr("type","password");
+             $("#check").val("yes");
+             $("#hide_show").html("show");
+         }
+      })
+   })
+</script>
+</html>

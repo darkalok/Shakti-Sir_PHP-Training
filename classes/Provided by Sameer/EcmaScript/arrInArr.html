@@ -1,0 +1,42 @@
+<!-- Array in Array to convert A Single Array -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>array In array</title>
+</head>
+<script>
+   //  Logic
+   let arr = [10,20,30,[100,200,300,[1000,2000],400],40];
+   // let a = [];
+   // let i = 0;
+   // function array( arr){
+   //    for(let x=0;x<arr.length;x++){
+   //    if(typeof(arr[x])=='object'){
+   //      array(arr[x]);
+   //    }else{
+   //       a[i]=arr[x];
+   //       i++;
+   //    }
+   // }
+   // }
+   // for(var x=0;x<arr.length;x++){
+   //    if(typeof(arr[x])=='object'){
+   //      array(arr[x]);
+   //    }else{
+   //       a[i]=arr[x];
+   //       i++;
+   //    }
+   // }
+   // console.log(arr)
+   // console.log(a);
+
+
+   //  With Function 
+    let arr2 = arr.flat(Infinity);
+    console.log(arr2);
+</script>
+</html>

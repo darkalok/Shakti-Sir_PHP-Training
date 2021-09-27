@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <title>Document</title>
+
+   <style>
+      .login{
+         background-color: rgb(234, 243, 239);
+         text-align: center;
+         margin: 0px auto;
+         height: 100%;
+         /* width: 100px; */
+         /* padding-top: 30px; */
+         width: 100%;
+      }
+      .login p:first-child{
+         font-size: 35px;
+         padding-top: 10px;
+      }
+      .option{
+         border-bottom: 2px solid rgb(66, 65, 65);
+         width: 90%;
+         margin: 0 auto;
+      }
+      .option span{
+         margin-right: 5%;
+         padding: 0.5% 3%;
+         font-size: 18px;
+      }
+      .option #op_email{
+         margin-left: -50% !important;
+      }
+      .option span:hover{
+         border-bottom: 2px solid rgb(252, 4, 107);
+      }
+      input:not(#Check){
+         width: 90%;
+         margin: 0 auto;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-5 offset-md-4 col-sm-12 offset-sm-0">
+           <form> 
+            <div class="login">
+               <p>Create Account</p>
+               <p>Welcome to E_shop</p>
+               <div class="option">
+                  <span id="op_email">Email</span>
+                  <span>Mobile</span>
+               </div>
+               <div class="col-md-12 col-sm-12">
+                  <label for="user_email" class="form-label">First name</label>
+                  <input type="email" class="form-control" id="user_email" value="" required>
+                </div>
+               <br />
+               <div class="col-md-12 col-sm-12">
+                  <label for="user_password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="user_password" value="" required>
+               </div>
+               <br />
+               <div class="col-md-12 col-sm-12">
+                  <label for="ref_id" class="form-label">Referral Id(Optional)</label>
+                  <input type="text" class="form-control" id="ref_id" value="" required>
+               </div>
+               <br/>
+               <div class="col-10 offset-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Check" required>
+                    <label class="form-check-label" for="Check">
+                     I have read and agree to the terms of Service. <a href="#">E_shop terms</a>                    </label>
+                  </div>
+                </div>
+              
+               
+               <div class="d-grid gap-2 col-6 mx-auto m-3">
+                  <button class="btn btn-outline-warning" type="button">Button</button>
+               </div>
+              
+               <p>Already registered? <a href="#">Log In</a></p>
+
+            </div>
+            </form>
+          </div>
+      </div>
+   </div>
+
+</body>
+</html>

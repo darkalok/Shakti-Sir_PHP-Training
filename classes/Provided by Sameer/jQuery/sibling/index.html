@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+   <style>
+      p{
+         height: 100px;
+         width: 100px;
+         border: 2px dotted turquoise;
+         display: inline-flex;
+      }
+   </style>
+</head>
+<body>
+   <div>
+      <p>text1</p>
+      <p>text2</p>
+      <p id="text3">text3</p>
+      <p>text4</p>
+      <p>text5</p>
+      <p>text6</p>
+      <p id="text7">text7</p>
+      <p>text8</p>
+   </div>
+   <button id="btn">Click</button>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#btn").click(function(){
+      //   $("#text3").siblings().css({
+      //      'background-color':'gold'
+      //   });
+      // $("#text3").prev().css({
+      //      'background-color':'gold'
+      //   });
+      // $("#text3").prevAll().css({
+      //      'background-color':'gold'
+      //   });
+      // $("#text3").prevUntil().css({
+      //      'background-color':'gold'
+      //   });
+      $("#text3").next().css({
+           'background-color':'gold'
+        });
+      //   $("#text3").nextAll().css({
+      //      'background-color':'gold'
+      //   });
+      //   $("#text3").nextUntil("#text7").css({
+      //      'background-color':'gold'
+      //   });
+      });
+   });
+</script>
+</html>

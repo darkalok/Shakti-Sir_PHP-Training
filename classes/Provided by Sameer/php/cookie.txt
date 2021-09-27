@@ -1,0 +1,20 @@
+COOKIE-(key & value)
+-------------
+  create server side. and save client  browser
+  send to client 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

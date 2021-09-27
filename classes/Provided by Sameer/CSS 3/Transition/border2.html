@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <style>
+     #btn{
+       height:50px;
+       width:150px;
+       margin:200px;
+       border:none;
+       outline:none;
+       background-color:#009688c7;
+       color:white;
+       font-weight:bolder;
+       position:relative;
+     }
+     #btn::before{
+       content: '';
+       position: absolute;
+       bottom: 0px;
+       left: 0px;
+       border-right: 4px solid black;
+       height:0%;
+       transition: all 0.7s;
+     }
+     #btn::after{
+       content:"";
+       position:absolute;
+       top:0px;
+       right:0px;
+       border-left:4px solid black;
+       height:0%;
+       transition:all 0.7s;
+     }
+     #btn:hover::after{
+       height:100%;
+     }
+     #btn:hover::before{
+       height:100%;
+     }
+   </style>
+ </head>
+ <body>
+  <button id="btn">Login</button>
+ </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add and Remove</title>
+   <style>
+      .list{
+         list-style-type: decimal;
+      }
+   </style>
+</head>
+<body>
+   <u class="sub">
+      <li>React js</li>
+      <li>React Native</li>
+      <li>Github</li>
+   </u>
+   <button id="addbtn">Add Class</button>
+   <button id="removebtn">Remove Class</button>
+   <button id="togglebtn">Add/Remove Class</button>
+</body>
+<script>
+   let addbtn = document.querySelector("#addbtn");
+   let removebtn = document.querySelector("#removebtn")
+   let togglebtn = document.querySelector("#togglebtn")
+
+   let sub = document.querySelector(".sub")
+
+   addbtn.addEventListener("click",function(){
+      sub.classList.add("list")
+   })
+</script>
+</html>

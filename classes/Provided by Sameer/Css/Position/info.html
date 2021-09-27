@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Info</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            margin: auto;
+            height: 250px;
+            width: 300px;
+            border: 5px solid black;
+            position: relative;
+            display: inline-block;
+        }
+        .card img{
+            height: 100%;
+            width: 100%;
+        }
+        .img-cap{
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            background-color: black;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            font-size: 20px;
+            height: 0px;     
+        }
+        .card:hover .img-cap{
+            transition: height 1s;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="i2.jpg" alt="" />
+        <div class="img-cap">
+            <p>Sameer</p>
+            <p>Web Developer</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="./jquery.js"></script>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+      }
+      .menubar{
+         position: relative;
+      }
+      .menu{
+         /* border: 1px solid black; */
+         text-align: center;
+         width: 60px;
+         background-color: teal;
+         color: yellow;
+         cursor: pointer;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+      }
+      nav ul{
+         background-color: teal;
+         height: 100vh;
+         width: 20%;
+         list-style-type: none;
+         position: relative;
+         top: 0px;
+         left: -20%;
+         transition: all 1s;
+      }
+      nav ul li a{
+         color: white;
+         display: block;
+         text-align: center;
+         text-decoration: none;
+         padding: 10px;
+      }
+      .close{
+         color: white;
+         position: absolute;
+         right: 5px;
+         cursor: pointer;
+      }
+      nav ul li a :hover{
+        background-color: tomato;
+      }
+   </style>
+</head>
+<body>
+   <div class="menubar">
+      <div class="menu">Menu</div>
+      <nav>
+         <ul>
+            <li class="close">X</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </nav>
+   </div>
+</body>
+<script>
+   $(document).ready(function(){
+      $(".menu").click(function(){
+         $(".menu").hide(1000);
+         $("nav ul").css({"left":"0px"});
+      });
+      $(".close").click(function(){
+         $("nav ul").css({"left":"-20%"});
+         $(".menu").show();
+      });
+   });
+</script>
+</html>

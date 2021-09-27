@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Word Count</title>
+</head>
+<script>
+    let st = prompt("Enter String","this is a pen");
+    let fnd = prompt("Enter Find Word","is");
+    let c= 0;
+   // let word = st.split(' ');
+   // for(w of word){                           // Sort method
+   //    if(w == fnd)
+   //      c++;
+   // }
+   // console.log("Count= ",c);
+
+   let word= ' ';
+   for(let i=0; i<st.length; i++){
+      if(st.charAt(i)!=' '){
+         word=word+st.charAt(i);
+      }
+      if(st.charAt(i)==' ' || i==st.length-1){
+         if(word == fnd){
+            c++;
+         }
+         word='';
+      }
+      console.log(c);
+   }
+</script>
+</html>

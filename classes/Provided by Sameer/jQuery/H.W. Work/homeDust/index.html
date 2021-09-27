@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+   <style>
+      .container{
+         /* border: 1px solid red; */
+         height: 600px;
+         width: 800px;
+         margin: 20px auto;
+      }
+      .container .home img{
+         height: 50px;
+         width: 50px;
+         margin: 5px 25px;
+      }
+      .h2{
+        /* border: 1px solid green; */
+        width: 100px;
+      }
+      .h2 img{
+         display: block;
+         /* margin: 5px 15px; */
+         padding-top: 18px;
+      }
+      .h3{
+         position: absolute;
+         /* border: 2px dotted purple; */
+         display: block;
+         width: 100px;
+         top: 90px;
+         left: 900px;
+         /* padding-top: 10px; */
+      }
+      .h3 img{
+         /* margin: 20px; */
+         padding-top: 18px;
+      }
+      .dustbin{
+         height: 40px;
+         width: 40px;
+         position: relative;
+         top: -550px;
+         left: 400px;
+      }
+      .dustbin img{
+         height: 100%;
+         width: 100%;
+         cursor: pointer;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="home h1">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+      </div>
+      <div class="home h2">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+      </div>
+      <div class="home h3">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+      </div>
+      <div class="home h4">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+         <img src="/H.W. Work/house.png" alt="">
+      </div>
+   </div>
+   <div class="dustbin">
+      <img src="/H.W. Work/dust.png" class="dust" alt="">
+   </div>
+</body>
+<script>
+   $(document).ready(function(){
+      $(".dust").hover(function(){
+         $(this).animate({
+            left:'900px'
+            // border:'1px solid red'
+         },4000)
+      })
+   })
+</script>
+</html>

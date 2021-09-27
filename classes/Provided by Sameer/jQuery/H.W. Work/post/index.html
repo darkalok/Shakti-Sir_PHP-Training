@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="./../../jquery.js"></script>
+   <style>
+      .col{
+         height: 20px;
+         width: 20px;
+         display: inline-block;
+         cursor: pointer;
+      }
+      .active-post{
+         margin: auto;
+         height: 200px;
+         width: 200px;
+         color: white;
+         text-align: center;
+         line-height: 200px;
+      }
+   </style>
+</head>
+<body>
+   <input type="text" id="status" />
+   <button id="post">Post</button>
+   <br/>
+   <div style="background: teal;" class="col"></div>
+   <div class="col" style="background: pink;"></div>
+
+   <div id="output"></div>
+</body>
+<script>
+   $(document).ready(function(){
+      var myColor ;
+      $(".col").click(function(){
+         myColor=$(this).prop("style").background;
+      });
+      $("#post").click(function(){
+         if(myColor==undefined){
+            alert("Please select color");
+            return;
+         }
+         var status = $("#status").val();
+         $("#output").html(status);
+         $("#output").addClass("active-post");
+         $("#output").css("background",myColor);
+      });
+   });
+</script>
+</html>

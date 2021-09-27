@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>String</title>
+</head>
+<script>
+   let st =prompt("Enter String","This is a pen");
+   console.log(st);
+   let fnd = prompt("Enter Find Word","is");
+   let rpl = prompt("Enter Replace Word","are");
+   let word = st.split(' ');
+   for(let i=0;i<word.length;i++){
+      if(word[i] == fnd)
+        word[i]=rpl;                 // Sort Method
+   }
+   let cs = word.join(' ');
+   console.log("New String= ",cs);
+</script>
+</html>

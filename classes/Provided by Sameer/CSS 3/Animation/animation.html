@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    @keyframes animate{
+      0%{
+          background-color:cyan;
+          }
+      50%{
+          background-color:gold;
+         }
+      75%{
+          background-color:red;
+         }
+      100%{
+         background-color:green;
+         width:500px;
+        }
+    }
+    .mydiv{
+       margin:80px;
+       height:100px;
+       width:100px;
+       background-color:red;
+       animation-name:animate;
+       animation-duration:2s;
+       animation-iteration-count:infinite;
+       animation-timing-function:linear;
+       animation-direction:alternate-reverse;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="mydiv"></div>
+ </body>
+</html>

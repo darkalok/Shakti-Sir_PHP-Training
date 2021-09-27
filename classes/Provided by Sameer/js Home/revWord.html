@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<script>
+   let str = prompt("Enter String",'This is a pen');
+   console.log(str,str.length);
+   console.log(str);
+   str=str.split(' ');
+   console.log(str,str.length);
+    for(i=0;i<str.length;i++){
+       word=str[i];
+       word=word.split('');
+       str[i]=word.reverse().join('');
+    }
+   console.log(str);
+</script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CountWord</title>
+   <style>
+      body{
+         background-color: gray;
+      }
+      *{
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      div{
+         margin: 50px auto;
+         border: 2px solid goldenrod;
+         text-align: center;
+         width: 70%;
+         height: 300px;
+      }
+      input{
+         margin: 20px;
+         height: 30px;
+         border: none;
+         outline: none;
+         background-color: lightcyan;
+         border-radius: 5px;
+      }
+      ::placeholder{
+         padding-left: 10px;
+      }
+      label{
+         /* font-weight: bold; */
+         font-size: 18px;
+      }
+      button{
+         height: 45px;
+         width: 110px;
+         margin-top: 20px;
+         outline: none;
+         background-color: gray;
+         color: rgb(7, 193, 206);
+         /* font-weight: bold; */
+         font-size: 17px;
+         border: 1px solid rgb(7, 193, 206);
+         border-radius: 5px;
+      }
+      button:hover{
+         background-color: rgb(7, 193, 206);
+         color: white;
+         border: none;
+      }
+   </style>
+</head>
+<body>
+   <div>
+      <label>String</label>
+      <input type="text" id="str" placeholder="String" required />
+      <br/>
+      <label>Find</label>
+      <input type="text" id="fnd" placeholder="find" required />
+      <br/>
+      <label>Count</label>
+      <input type="text" id="countt" value="" placeholder="Count" readonly />
+      <br/>
+      <button onclick="count()">Get</button>
+   </div>
+</body>
+<script>
+   function count(){
+      a=str.value;
+      b=fnd.value;
+      let c=0;
+      a=a.split(' ');
+      for(i=0;i<a.length;i++){
+         if(a[i]==b)
+           c++;
+      }
+      countt.value=c;
+   }
+</script>
+</html>

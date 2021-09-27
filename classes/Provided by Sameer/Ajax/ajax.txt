@@ -1,0 +1,4 @@
+AJAX = Asynchronous JavaScript And XML.
+
+
+Update a web page without reloading the page

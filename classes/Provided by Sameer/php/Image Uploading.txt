@@ -1,0 +1,53 @@
+Image Uploading-
+------------------------
+get - only send text data
+post- send binary and text data
+
+we naver use get method in uploading file beacuse file is binary data and get upload only text data.
+
+what is binary(video,audio,image) data in php.
+
+return five info-
+--------------
+ name
+ tmp name 
+ type 
+ size
+ error code
+
+create folder out location 'upload'
+
+
+-------------------------
+implode and explode
+
+
+implode -  array to string convert
+ 
+explode - string to array
+
+------------------------
+multiple(task)
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

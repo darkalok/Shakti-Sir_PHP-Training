@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BlurImage</title>
+   <style>
+      img{
+         height: 100px;
+         width: 100px;
+      }
+   </style>
+   <script src="/jquery.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("img").fadeTo("",0.3);
+         $("img").mouseover(function(){
+            $(this).fadeTo("",1);
+         });
+         $("img").mouseout(function(){
+            $("img").fadeTo("",0.3);
+         });
+      });
+   </script>
+</head>
+<body>
+   <img src="1.jpg"/>
+   <img src="2.jpg" />
+   <img src="3.jpg" />
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <title>Validation Using JS</title>
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col">
+            <form action="" class="needs-validation" novalidate>
+               <div>
+                  <input type="text" class="form-control" required />
+                  <div class="invalid-feedback">Wrong Input</div>
+               </div>
+               <input type="submit" class="btn btn-outline-danger" />
+         </form>
+         </div>
+      </div>
+   </div>
+</body>
+<script>
+   let forms = document.querySelectorAll(".needs-validation");
+   forms[0].addEventListener("submit",function(event){
+      if(!forms[0].checkValidity()){
+         event.preventDefault();
+      }
+      forms[0].classList.add("was-validated");
+   });
+</script>
+</html>

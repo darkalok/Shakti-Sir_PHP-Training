@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("#btn1").click(function(){
+            $("#text1").css({
+               'color':'red',
+               'font-size':'24px'
+            });
+         });
+         $("#btn2").click(function(){
+            $("#text1").addClass("active");
+         });
+         $("#btn3").click(function(){
+            console.log($("#text2").hasClass("active"));
+            if($("#text1").hasClass("active")){
+               $("#text1").removeClass("active");
+            }
+         });
+         $("#btn4").click(function(){
+            $("#text1").toggleClass("active");
+         });
+      });
+   </script>
+   <style>
+      .active{
+         background-color: black;
+         color: white;
+      }
+   </style>
+</head>
+<body>
+   <p id="text1">Thank you for choosing Ms</p>
+   <button id="btn1">css()</button>
+   <button id="btn2">addClass()</button>
+   <button id="btn3">hasClass()</button>
+   <button id="btn4">toggleClass()</button>
+</body>
+</html>

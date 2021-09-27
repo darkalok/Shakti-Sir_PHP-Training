@@ -1,0 +1,31 @@
+
+
+  problem 
+  ---------------
+   ek file se dusre file pr jane se data loss ho jata hai.
+
+  solution
+  ---------------
+    session kuchh time ke liye data ko store kr leta hai jisse ki hm ek file se dusre file me jayege tb bhi   hmara data loss ni hoga.
+
+
+
+example   :-
+------------------------
+person.php(p.php)
+  name
+  c/o
+  button(next)
+
+qualification.php(q.php)
+  course
+  duriation
+  button(next)
+
+address.php (a.php)
+  city
+  state
+  button(submit) 
+
+server.php
+ 

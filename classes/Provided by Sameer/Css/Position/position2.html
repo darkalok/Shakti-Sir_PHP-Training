@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            border: 5px solid black;
+            padding: 5px;
+            height:900px;
+        }
+        .parent{
+            border: 5px solid orange;
+        }
+        .parent div{
+            border: 5px solid red;
+            text-align: center;
+            margin-top: 20px;
+            background-color: red;
+        }
+        .child1{
+            /* top: 0px;
+            left: 90px;
+            position: fixd/absolute; */
+        }
+        .child3{
+            /*top: 20px;
+            position: relative;*/
+        }
+        .box{
+            top: 10px;
+            position:sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">Child1</div>
+        <div class="child2">Child2</div>
+        <div class="child3">Child3</div>
+    </div>
+    <div class="parent box">
+        <div class="child1">Child1</div>
+        <div class="child2">Child2</div>
+        <div class="child3">Child3</div>
+    </div>
+</body>
+</html>

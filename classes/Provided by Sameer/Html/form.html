@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form</title>
+
+</head>
+
+<body>
+
+    <form action="server.php" method="GET">
+
+        <label for="user_name"> User Name</label>
+
+        <input type="text" name="user_name" />
+
+        <br />
+
+        <label for="user_password"> User Password</label>
+
+        <input type="password" name="user_password" />
+
+        <br />
+
+        <label for="user_gen"> Gender</label>
+
+        <input type="radio" name="user_gen" value="male" /> male
+
+        <input type="radio" name="user_gen" value="female" /> female
+
+        <br />
+
+        <label for="user_course"> Course</label>
+
+        <input type="checkbox" name="user_course" value="c" /> C
+
+        <input type="checkbox" name="user_course" value="c++" /> C++
+
+        <br />
+
+        <label for="user_city"> City</label>
+
+    <select name="user_city" id="">
+
+        <option value="noida"> Nodia</option>
+
+        <option value="pune"> Pune</option>
+
+    </select>
+
+    <br />
+
+    <label for="user-photo"> Photo</label>
+
+    <input type="file" name="user_photo" />
+
+    <br />
+
+    <label for="user_comment"> Comment</label>
+
+    <textarea name="user_comment" id="" cols="25" rows="10"></textarea>
+
+    <input type="submit" value="Submit" />
+
+    </form>
+
+</body>
+
+</html>

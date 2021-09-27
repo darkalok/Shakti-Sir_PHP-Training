@@ -1,0 +1,6 @@
+$_GET
+$_POST
+$_REQUEST
+$_SESSION
+$_COOKIE
+$_FILE

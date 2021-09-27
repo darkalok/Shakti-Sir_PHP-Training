@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+   const student = {
+      id:101,
+      name:'Sameer',         // Object Destructuring
+      city:'Prayagraj'
+   };
+   // console.log(student);
+
+   // const id = student.id;
+   // const name = student.name;    //old method (not use)
+   // const city = student.city;
+   // console.log(id,name,city);
+
+   // const {id:id,name:name,city:city} = student;
+   // console.log(id,name,city);     // middle level method (not use)
+
+   const {id,name,city} = student;    // new method  (use)
+   console.log(id,name,city);         
+</script>
+</html>

@@ -1,0 +1,18 @@
+Login and logout-
+---------------------------
+
+login.php
+   username
+   password
+   btn(login)
+
+
+server.php
+ 
+   
+profile.php
+  
+
+logout.php
+
+  

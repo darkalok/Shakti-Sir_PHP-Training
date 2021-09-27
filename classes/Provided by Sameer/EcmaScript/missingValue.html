@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Missing Value</title>
+</head>
+<script>
+   let dif = [];
+   let mis = [];
+   let x =0;
+   let y=0;
+   function difference(a,b){
+    dif[x] = b-a;
+    x++;
+   }
+   function addMisValue(num){
+      for(let ii=0;ii<arr.length;ii++){
+         if(arr[ii]>num){
+            aa=arr[ii];
+            arr[ii]=num;
+            let jj;
+            for(jj=ii+1;jj<arr.length;jj++){
+                bb=arr[jj];
+                arr[jj]=aa;
+                aa=bb;
+            }
+            arr[jj]=bb;
+            break;
+         }
+      }
+   }
+   function match(a){
+      for(let i=0;i<arr.length;i++){
+        n=arr[(i+1)]-arr[i];
+        if(n>a){
+           b=n/2;
+           for(j=0;j<b;j=j+a){
+              mis[y]=arr[i]+a+j;
+              addMisValue(mis[y])
+              y++;
+           }
+        }
+      }
+   }
+   let arr =[10,20,30,80,100];
+   for(let i=0;i<arr.length;i++){
+      difference(arr[i],arr[(i+1)]);
+   }
+   console.log("Array = ",arr);
+   dif.sort();
+   match(dif[0]);
+   console.log("Miss Value =",mis);  
+   console.log("New Array= ",arr)
+</script>
+</html>

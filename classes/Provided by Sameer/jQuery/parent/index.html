@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+   <style>
+      div,p{
+         margin: 50px 50px;
+      }
+      .outer{
+         border: 5px solid red;
+         position: relative;
+      }
+      .inner{
+         border: 3px dotted green;
+      }
+      .parent{
+         border: 10px groove red;
+      }
+      .child{
+         border: 5px dotted greenyellow;
+         text-align: center;
+         padding: 10px;
+      }
+   </style>
+</head>
+<body>
+   <div class="outer">
+      <div class="inner">
+         <div class="parent">
+            <p class="child">Parent method</p>
+         </div>
+      </div>
+   </div>
+   <button id="btn">Click</button>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#btn").click(function(){
+         // $(".child").parent().css({
+         //    'background-color':'black',
+         //    'color':'white'
+         // })
+         // $(".child").parents().css({
+         //    'background-color':'green',
+         //    'color':'white'
+         // })
+         // $(".child").parentsUntil('.outer').css({
+         //    'background-color':'black',
+         //    'color':'white'
+         // })
+         // $(".child").offsetParent().css({
+         //    'background-color':'black',
+         //    'color':'white'
+         // })
+         // $(".inner").children().css({
+         //    'background-color':'black',
+         //    'color':'white',
+         //    'border-color':'black'
+         // })
+         $(".inner").find(".child").css({
+            'background-color':'black',
+            'color':'white'
+         })
+      })
+   })
+</script>
+</html>

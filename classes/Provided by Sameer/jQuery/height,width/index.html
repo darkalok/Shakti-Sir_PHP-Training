@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="/jquery.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("#btn").click(function(){
+            console.log($("#box").height());
+            console.log($("#box").width());
+            console.log($("#box").innerHeight());
+            console.log($("#box").innerWidth());
+            console.log($("#box").outerHeight());
+            console.log($("#box").outerWidth());
+         });
+      });
+   </script>
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+      }
+      #box{
+         height: 100px;
+         width: 100px;
+         background-color: teal;
+         border: 5px solid red;
+         padding: 20px;
+      }
+   </style>
+</head>
+<body>
+   <div id="box"></div>
+   <button id="btn">Click</button>
+</body>
+</html>

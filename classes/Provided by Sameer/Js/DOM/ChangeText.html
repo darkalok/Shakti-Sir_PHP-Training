@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Change Text</title>
+</head>
+<body>
+   <div class="myclass">Welcome</div>
+   <div class="myclass">Welcome</div>
+   <button onclick="change();">Click</button>
+</body>
+<script>
+   function change(){
+      let d=document.getElementsByClassName("myclass");
+      for(let i=0;i<d.length;i++){
+         d[i].innerHTML="Hello";
+         d[i].style.color="red";
+      }
+   }
+</script>
+</html>

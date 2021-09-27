@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Slide</title>
+   <style>
+      .sub-container{
+         background-color: teal;
+         height: 100px;
+         text-align: center;
+         padding: 100px;
+      }
+      input[type="email"]{
+         outline: none;
+         border: none;
+         background: transparent;
+         border-bottom: 1px solid white;
+         color: white;
+      }
+      ::placeholder{
+         color: white;
+      }
+   </style>
+   <script src="/jquery.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("#btn1").click(function(){
+            $(".sub-container").slideUp(1000);
+         });
+         $("#btn2").click(function(){
+            $(".sub-container").slideDown(1000);
+         });
+         $("#btn3").click(function(){
+            $(".sub-container").slideToggle(1000);
+         });
+      });
+   </script>
+</head>
+<body>
+   <div class="sub-container">
+      <input type="email" placeholder="Enter email" />
+   </div>
+   <input type="button" value="SlideUp" id="btn1" />
+   <input type="button" value="SlideDown" id="btn2" />
+   <input type="button" value="SlideToggle" id="btn3" />
+</body>
+</html>

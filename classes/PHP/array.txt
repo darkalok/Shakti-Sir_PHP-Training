@@ -1,0 +1,24 @@
+Array Method :-
+------------------------------------------
+
+array_push()
+array_pop()
+array_shift()
+array_unshift()
+array_unique()
+array_reverse()
+array_merge()
+sort()
+rsort()
+ksort()
+krsort()
+asort()
+arsort()
+array_keys()
+array_values()
+array_flip()
+array_key_exists()
+array_search()
+in_array()
+array_sum()
+

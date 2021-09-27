@@ -1,0 +1,10 @@
+HTML
+CSS
+CSS3
+Bootstrap
+Js+ES
+Php
+MySQL
+jQuery
+Ajax
+Wordpress

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ball</title>
+   <style>
+     #myid{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: linear-gradient(yellow,green);
+        position: relative;
+     }
+   </style>
+</head>
+<body>
+   <div id="myid"></div>
+</body>
+<script>
+   let ball = document.getElementById("myid");
+   window.addEventListener("click",function(e){
+      // console.log(e.clientX,e.clientY);
+      ball.style.left = e.clientX;
+      ball.style.top = e.clientY;
+   });
+</script>
+</html>

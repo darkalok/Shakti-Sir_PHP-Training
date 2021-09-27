@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Right Shifting Array</title>
+</head>
+<body></body>
+<script>
+   let arr = [1,2,3,4,5,7,8]
+   function shift(n){
+      for(i=0;i<arr.length;i++){
+         if(arr[i]>n){
+            a=arr[i];
+            arr[i]=n;
+            for(j=i+1;j<arr.length;j++){
+                b=arr[j];
+                arr[j]=a;
+                a=b;
+            }
+            arr[j]=b;
+            break;
+         }
+        
+      }
+   }
+   shift(6);
+   console.log(arr);
+</script>
+</html>

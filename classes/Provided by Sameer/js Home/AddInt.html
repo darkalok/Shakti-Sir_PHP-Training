@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CountWord</title>
+   <style>
+      body{
+         background-color: gray;
+      }
+      *{
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      div{
+         margin: 50px auto;
+         border: 2px solid goldenrod;
+         text-align: center;
+         width: 70%;
+         height: 300px;
+      }
+      input{
+         margin: 20px;
+         height: 30px;
+         border: none;
+         outline: none;
+         background-color: lightcyan;
+         border-radius: 5px;
+      }
+      ::placeholder{
+         padding-left: 10px;
+      }
+      label{
+         /* font-weight: bold; */
+         font-size: 18px;
+      }
+      button{
+         height: 45px;
+         width: 110px;
+         margin-top: 20px;
+         outline: none;
+         background-color: gray;
+         color: rgb(7, 193, 206);
+         /* font-weight: bold; */
+         font-size: 17px;
+         border: 1px solid rgb(7, 193, 206);
+         border-radius: 5px;
+      }
+      button:hover{
+         background-color: rgb(7, 193, 206);
+         color: white;
+         border: none;
+      }
+   </style>
+</head>
+<body>
+   <div>
+      <label>String</label>
+      <input type="text" id="str" placeholder="Ex.- S1@m2e3er" required />
+      <br/>
+      <label>Count</label>
+      <input type="text" id="store" value="" placeholder="Ex:- 6" readonly />
+      <br/>
+      <button onclick="add()">Get</button>
+   </div>
+</body>
+<script>
+   function add(){
+      n=str.value;
+      sum=0;
+      for(let i=0;i<n.length;i++){
+         if(n.charCodeAt(i) >= 48 && n.charCodeAt(i)<=57)
+            sum=sum+parseInt(n[i]);
+      }
+      store.value=sum;
+   }  
+</script>
+</html>

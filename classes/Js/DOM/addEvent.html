@@ -1,0 +1,25 @@
+<!-- addEventListener() -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>addEvent</title>
+</head>
+<body>
+   <div id="myid">Welcome</div>
+   <button id="btn">Click</button>
+</body>
+<script>
+   let btn= document.getElementById("btn");
+   let d = document.getElementById("myid");
+   btn.addEventListener("click",function(){
+      d.style.color="white";
+      d.style.background="red";
+      d.style.textAlign="center";
+      d.innerHTML="Hello";
+   });
+</script>
+</html>

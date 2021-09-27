@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #c62828;
+        }
+        .container{
+            margin: auto;
+            background-color: black;
+            height:380px;
+            width:300px;
+            text-align:center;
+            margin-top:100px;
+        }
+        .container img{
+            height:80px;
+            width:80px;
+            border-radius: 50%;
+            margin-top: -20px;
+            border:1px solid white;
+            background-color: white;
+        }
+        input[type="text"],input[type="password"]{
+            margin-top: 55px;
+            border:none;
+            outline:none;
+            background:transparent;
+            border-bottom: 1px soid white;
+            color: white;
+        }
+        #btn{
+            margin-top: 55px;
+            height:30px;
+            width:70px;
+            border:none;
+            outline:none;
+            font-weight:bold;
+        }
+        #btn:hover{
+            background-color: #c62828;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="user-shape.svg" alt="">
+        <div>
+            <input type="text" placeholder="Enter Username" />
+        </div>
+        <div>
+            <input type="password" placeholder="Enter Password" />
+        </div>
+        <div>
+            <input type="button" value="Login" id="btn">
+        </div>
+    </div>
+</body>
+</html>

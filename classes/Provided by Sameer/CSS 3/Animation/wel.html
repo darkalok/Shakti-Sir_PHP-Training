@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+      @keyframes animate{
+         0%{}
+         100%{
+           transform:rotateY(360deg);
+         }
+       }
+      .rotate-box{
+         text-align:center;
+       }
+      .rotate-box p{
+         display:inline-block;
+         border:1px solid black;
+         margin-left:2px;
+         padding:5px;
+         border-radius:50%;
+         box-shadow:2px 2px 2px black;
+         animation: animate 2s infinite alternate;
+       }
+    </style>
+</head>
+<body>
+    <div class="rotate-box">
+      <p>W</p>
+      <p>E</p>
+      <p>L</p>
+      <p>C</p>
+      <p>O</p>
+      <p>M</p>
+      <p>E</p>
+    </div>
+</body>
+</html>

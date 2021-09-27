@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        hr{
+            margin-top:50px;
+            margin-bottom: 50px;
+            border-width: 3px;
+        }
+        .card{
+            height: 400px;
+            width:300px;
+            border:1px solid black;
+            display:inline-block;
+            margin:5px 70px;
+            border-radius: 10px;
+            color: whitesmoke;
+            background-color:black;
+        }
+        img{
+            height: 90px;
+            widows: 90px;
+            border:1px solid black;
+            border-radius: 50%;
+            margin-top: 50px;
+            margin-left: 102px;
+            background-color: whitesmoke;
+        }
+        p{
+            text-align: center;
+            margin:20px;
+            font-size: 25px;
+        }
+        .card:hover{
+            color:black;
+            background-color:blanchedalmond;
+            height: 415px;
+            width: 315px;
+            border: none;
+        }
+        #card1:hover #card2,#card3{
+             position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <hr />
+       <div class="card" id="card1">
+           <img src="user-shape.svg" alt="">
+           <p>Sameer Singh</p>
+           <p>BCA</p>
+           <p>7458****50</p>
+       </div>
+       <div class="card" id="card2">
+           <img src="user-shape.svg" alt="">
+           <p>Yashi Srivastava</p>
+           <p>BCA</p>
+           <p>7458****50</p>
+       </div>
+       <div class="card" id="card3">
+           <img src="user-shape.svg" alt="">
+           <p>Rishab Tripathi</p>
+           <p>BCA</p>
+           <p>7458****50</p>
+       </div>
+    <hr />
+</body>
+</html>

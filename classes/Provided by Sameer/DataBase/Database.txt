@@ -1,0 +1,117 @@
+Database Management System(DBMS)  :---
+================================================
+  database  -  collection if data
+  management  - manage
+  system  - software
+
+-> it is a software which is used to manage (store, update, delete and display) the collection of data.
+-> it is alsouseful to provide security and protection.
+
+
+RDBMS    :-----
+=================================================
+-> Relational Database Management System. 
+-> it is collection of program o software that store the data in the form of table.
+i.e  in row and column form.
+
+
+SQL     :-
+=================================================
+-> Structured query language
+-> it is a database computer language which is used to manage the data in relational database.
+
+
+
+SQL Command  :-
+=================================================
+  -> DDL (structure)
+  -> DML (table,record)
+  -> DQL (display)
+  -> DCL (data control)
+  -> TCL (save)
+
+
+DDL  (Structure)  :-
+-----------------------
+     -> data definition language.
+     -> automatic store (save).
+
+     CREATE  :-  to create a table.
+     AFTER   :-  apply on the column of table (add, delete, modify, rename).
+     DROP   :-  to delete the table.
+
+DML (table, record)   :-
+--------------------------
+    -> data manipulation language.
+    -> not automatic save.
+
+    INSERT    :- to insert record.
+    UPDATE   :- to update record.
+    DELETE   :- to delete all record or particular record.
+
+DQL (display)   :-
+-------------------
+
+   SELECT
+
+DCL (data control)   :-
+-------------------------
+  -> data control language.
+
+  GRANT   :- to give user access permission
+  REVOKE   :- used to take  back permission rom the user.
+
+TCL  :-
+---------
+   -> transaction control language.
+
+     COMMIT  :- to save the record.
+     ROLLBACK  :- undo the data.
+     SAVEPOINT
+
+
+-----------------------------:     MySQL    :-------------------------------------------
+
+->  it is a RDBMS.
+->  it is based on the SQL.
+->  it is open source database s/w.
+
+
+1. How to create database   :-
+      syntax  :-
+           create database databaseName;
+      Ex  :-
+           create database training;
+
+2. How to display/show all the database    :-
+      syntax  :-
+           show databaseName;
+           show databases;
+      Ex  :-
+           show training;
+
+3. How to use particular database    :-
+      syntax  :-
+           use databaseName;
+      Ex  :-
+           use training;
+
+4. How to delete particular database   :-
+      syntax  :-
+           drop databaseName;
+      Ex  :-
+           drop training;
+
+
+
+Data type   :-
+--------------------------------------
+
+int/number   -   integer/number
+char    - string(number/charchter/symbol) - (static memory allocation)
+varchar    -  string(number/charchter/symbol) - (dynamic)
+varchar2   - string(number/charchter/symbol) - (dynamic)
+date(date type)
+
+
+

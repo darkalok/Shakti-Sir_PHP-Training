@@ -1,0 +1,21 @@
+Q) echo  vs print
+
+Q) ==  vs ===
+
+Q) Type of error
+
+Q) isset()  vs unset()
+
+Q) unset() vs unlink()
+
+Q) implode() vs explode()
+
+Q) $_GET vs $_POST
+
+Q) indexArray vs associativeArray
+
+Q) require() vs include()
+
+Q) session vs cookie
+
+Q) mysqli_feetch_assoc() vs mysqli_fettch_array()

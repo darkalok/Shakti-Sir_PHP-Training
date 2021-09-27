@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Query Selector</title>
+</head>
+<body>
+   <div id="myid">Welcome 1</div>
+   <div class="myclass">Welcome 2</div>
+
+   <p class="myclass2">Hello 1</p>
+   <p class="myclass2">Hello 2</p>
+
+   <h2>Hii</h2>
+</body>
+<script>
+   let d1 = document.querySelector("#myid")
+   console.log(d1)
+
+   let d2 =  document.querySelector(".myclass")
+   console.log(d2)
+
+   let d3 = document.querySelectorAll(".myclass2")
+   for(let d of d3){
+     console.log(d)
+   }
+
+   let d4 = document.querySelector("h2")
+   console.log(d4)
+</script>
+</html>

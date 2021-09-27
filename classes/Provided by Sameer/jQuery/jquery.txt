@@ -1,0 +1,95 @@
+jQuery makes things like HTML document traversal and manipulation, event handling, animation, and Ajax simoler.
+
+
+for Effact  :-
+========================
+hide()
+show()
+toggle()
+
+slideUp()
+slideDown()
+slideToggle()
+
+fadeIn()
+fadeOut()
+fadeToggle()
+fadeTo()
+
+animate()
+
+
+change   :-
+========================
+text()
+html()
+val()
+attr()
+prop()
+
+css()
+addClass()
+removeClass()
+hasClass()
+toggleClass()
+
+append()
+prepand()
+after()
+before()
+remove()
+empty()
+
+
+
+
+height()
+width()
+innerHeight()   =>  height + padding
+innerWidth()   =>  width + padding
+outerHeight()  => height + padding + border
+outerWidth()   => width + padding + border
+offset()
+position()
+
+
+
+filter method  :-
+===============================
+first()
+last()
+eq()
+filter()
+not()
+
+
+Sibling method  :-
+==============================
+siblings()
+prev()
+prevAll()
+prevUntil()
+next()
+nextAll()
+nextUntil()
+
+
+Parent method :-
+===============================
+parent()
+parents()
+parentsUntil()
+offsetParent()
+
+
+children()
+find()
+
+
+
+scrollTop: ""
+
+
+
+
+

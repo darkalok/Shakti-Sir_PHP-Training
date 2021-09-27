@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Element Delete</title>
+</head>
+<script>
+    let a=[10,20,30,30,30,50,50,60,70,40,40];
+    d=2;
+    for(i=0;i<a.length;i){
+        if(a[i]==a[i+1]){
+            // for(j=i+1;a[j]!=a[i];j++){
+            //  d++;
+            // } 
+            a.splice(i,d);
+            i--;
+        }else{
+            i++;
+        }
+    }
+    console.log(a);
+</script>
+</html>

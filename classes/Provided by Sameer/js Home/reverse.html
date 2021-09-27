@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<script>
+    let a=[10,20,30,40,50,60];
+    let l=a.length;
+    //l= --l;
+    //l=l--;
+    l--;
+    let t;
+    for(i=0; i<l;i++,l--){
+        t=a[i];
+        a[i]=a[l];
+        a[l]=t;
+    }
+    console.log(a);
+</script>
+</html>

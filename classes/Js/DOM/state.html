@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>State</title>
+</head>
+<body>
+  <select id="state" onchange="change()">
+     <option value="..">..................</option>
+     <option value="up">UP</option>
+     <option value="mp">MP</option>
+  </select>
+  <div id="op"></div>   
+</body>
+<script>
+   function change(){
+      // alert("jdhftj");
+      let m =["Bhopal", "Riva", "Satna","Indore"];
+      let u = ["Kanpur", "Noida", "Prayagraj", "Kanpur"];
+      let result = "";
+      let output = "<select>";
+      let st = document.getElementById("state").value;
+        if(st == 'up')
+            result = u;
+        if(st == 'mp')
+            result = m;
+        for(let c of result){
+           output = output + "<option>" + c + "</option>";
+        }
+        output = output + "</select>";
+        document.getElementById("op").innerHTML = output;         
+   }
+</script>
+</html>

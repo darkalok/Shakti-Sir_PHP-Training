@@ -1,0 +1,28 @@
+*{
+   margin: 0;
+   padding: 0;
+   background-color: rgba(46, 59, 55, 0.815);
+   box-sizing: border-box;
+}
+body{
+   background-color: rgba(5, 139, 95, 0.815);
+}
+form{
+   /* border: 1px solid red; */
+   height: 500px;
+   width: 70%;
+   margin: 40px auto;
+   padding-top: 100px;
+}
+input{
+   background-color: transparent;
+   width: 50%;
+   height: 30px;
+   margin: 20px 25%;
+   border: none;
+   border-bottom: 2px solid rgb(180, 177, 177);
+   outline: none;
+   padding-left: 10px;
+   color: blanchedalmond;
+   font-size: 18px;
+}

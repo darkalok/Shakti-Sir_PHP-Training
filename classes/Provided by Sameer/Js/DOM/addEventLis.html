@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>addEventListener</title>
+</head>
+<body>
+   <div id="myid">Welcome</div>
+   <button id="btn">Click</button>
+</body>
+<script>
+   let btn = document.getElementById("btn");
+   let d =  document.getElementById('myid');
+
+   btn.addEventListener("click",function(){
+      d.style.background="red";
+   });
+   btn.addEventListener("mouseover",function(){
+      d.style.background="green";
+   });
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Slide</title>
+   <script src="/jquery.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("#btn1").click(function(){
+            $(".box1").fadeIn(1000);
+         });
+         $("#btn2").click(function(){
+            $(".box2").fadeOut(1000);
+         });
+         $("#btn3").click(function(){
+            $(".box3").fadeToggle(1000);
+         });
+         $("#btn4").click(function(){
+            $(".box4").fadeTo("slow",0.3);
+         });
+      });
+   </script>
+</head>
+<body>
+   <div class="box1" style="background: red; display: none;">1</div>
+   <div class="box2" style="background: purple;">2</div>
+   <div class="box3" style="background: teal;">3</div>
+   <div class="box4" style="background: black;">4</div>
+   <input type="button" value="fadeIn" id="btn1" />
+   <input type="button" value="fadeOut" id="btn2" />
+   <input type="button" value="fadeToggle" id="btn3" />
+   <input type="button" value="fadeTo" id="btn4" />
+</body>
+</html>

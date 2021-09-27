@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>String</title>
+</head>
+<script>
+   let st = '  JavaScript  ';
+   console.log(st,st.length); // 14
+
+   console.log(st.toUpperCase());  //JAVASCRIPT
+   console.log(st.toLowerCase());  //javascript
+   console.log(st.indexOf('a'));   //3
+   console.log(st.lastIndexOf('a')); // 5
+   console.log(st.trim());  // JavaScript
+   console.log(st.replace('Script', 'Module')); // JavaModule
+   console.log(st.startsWith('  Java'));  // true
+   console.log(st.endsWith('ipt  '));  // true
+   console.log(st.charCodeAt('a'));
+</script>
+</html>

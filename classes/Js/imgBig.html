@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+      let f=0;
+      function pic(){
+         if(f==0){
+           t1.height=t1.height+50;
+           t1.width=t1.width+50;
+           if(t1.height>300){
+                f=1;
+           }
+         }
+         if(f==1){
+            t1.height= t1.height-50;
+            t1.width= t1.width-50;
+            if(t1.height<=50){
+                f=0;
+           }
+         }
+      }
+   </script>
+</head>
+<body>
+  <img src="taj.jpg" alt="Error" height="50" width="50" id="t1" onclick="pic()">  
+</body>
+
+</html>

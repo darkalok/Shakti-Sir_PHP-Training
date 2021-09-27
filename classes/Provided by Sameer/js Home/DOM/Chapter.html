@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chapter</title>
+   <style>
+       div{
+           box-sizing: border-box;
+           border: 1px solid black;
+           height: 100px;
+           width: 200px;
+           margin: 0px auto;
+           text-align: center;
+           padding-top: 30px;
+       }
+   </style>
+</head>
+<body onload="Captcha()">
+<div id="mainCaptcha"></div>
+<input type="text" id="put" />
+<button  onclick="Captcha()">Refresh</button>
+<button onclick="Check()">Check</button>
+<div id="ans"></div>
+</body>
+<script type="text/javascript">
+    let code;
+    function Captcha(){ 
+        let str=[];
+        let alpha = new Array('A','B',1,'D','E',2,'G','H','I',3,'K','L','M','N',4,'P','Q','R',5,'T','U','V','W',6,'Y','Z','a','b',7,'d','e',3,'g','h',8,'j','k',8,'m','n','o','p',6,'r','s','t',9,'v','w','x',0,'z','C','F','J','O','S','X','c','i','u');
+        for(let i=1;i<=6;i++)
+            str[i]=alpha[Math.floor(Math.random() * alpha.length)+1];
+        code= str.join('');
+        document.getElementById("mainCaptcha").innerHTML = code; 
+    }
+    function Check(){
+       let input= document.getElementById('put').value;
+       if(input == code)
+         document.getElementById('ans').innerHTML ="True"
+       else
+         document.getElementById('ans').innerHTML ="False"
+       Captcha(); 
+       put.value='';
+    }
+</script>    
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Create Captcha</title>  
+    <script type="text/javascript">  
+        /* Function to Generat Captcha */  
+        function GenerateCaptcha() {  
+            var chr1 = Math.floor(Math.random() * 100) + '';    
+  
+            var str = new Array(4).join().replace(/(.|$)/g, function () { return ((Math.random() * 36) | 0).toString(36)[Math.random() < .5 ? "toString" : "toUpperCase"](); });  
+            // alert(chr1);
+            // alert(str);
+            var captchaCode = str + chr1,chr2,chr3;  
+            document.getElementById("txtCaptcha").value = captchaCode  
+        }
+    </script>  
+  
+</head>  
+<body onload="GenerateCaptcha();">    
+        <input type="text" id="txtCaptcha" style="text-align: center; border: none; font-weight: bold; font-size: 20px; font-family: Modern" />  
+        <input type="button" id="btnrefresh" value="Refresh" onclick="GenerateCaptcha();" />  
+        <br />  
+        <br />  
+    </div>  
+</body>  
+</html>   -->

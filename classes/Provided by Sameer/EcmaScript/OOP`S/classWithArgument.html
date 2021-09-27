@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Class with argument</title>
+</head>
+<body></body>
+<script>
+   // class with argument
+
+   //create old class
+   function Student(){
+      this.setValue =function(firstName,lastName){
+         this.firstName = firstName;
+         this.lastName = lastName;
+      }
+      this.getValue = function(){
+         return `${this.firstName} ${this.lastName}`;
+      }
+   }
+   // create object
+   let st = new Student();
+   st.setValue("Sameer","Singh");
+   console.log(st.getValue());
+   console
+</script>
+</html>

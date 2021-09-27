@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    *{
+       padding:0;
+       margin:0;
+     }
+     p{
+       border:2px solid black;
+       margin:20px;
+       text-align:center;
+      }
+     /*p:nth-child(3){
+       background-color:black;
+       color:white;
+      }*/
+      p:not(#myid){
+       background-color:black;
+       color:white;
+      }
+  </style>
+ </head>
+ <body>
+  <p>Child 1</p>
+  <p>Child 2</p>
+  <p id="myid">Child 3</p>
+  <p>Child 4</p>
+ </body>
+</html>

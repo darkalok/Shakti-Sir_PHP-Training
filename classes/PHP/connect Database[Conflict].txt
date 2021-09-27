@@ -1,0 +1,75 @@
+1.open xammp
+
+2.  start  apache
+    start  mysql
+
+3. sql dashbord=
+   ===================
+      localhost/phpmyadmin
+      (open sql dashbord)
+
+      click new and enter db name then create
+===================================================================================================
+
+store data table formate
+-------------------------------------------------------------------
+example-
+============
+product_id  product_name  product_price
+
+1           laptop        35000
+2           mobile        25000
+
+
+--------------------------------------------------------------
+
+mysqli_connect("hostname","username","password","dbname");
+
+hostname=localhost
+username= root
+password= blank
+dbname= 
+
+--------------------------------------------------------------
+
+
+Save Record=
+================================
+
+
+INSERT INTO emp_info (e_name,e_city,e_comp) VALUES ('sameer','delhi','tcs')";
+
+
+mysqli_query($con,$sql)
+
+
+
+======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

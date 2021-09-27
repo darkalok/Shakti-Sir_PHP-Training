@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer</title>
+    <style>
+        @media print{
+            #btn{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Text</p>
+    <button onclick="getPrint()" id="btn">Print</button>
+</body>
+<script>
+    function getPrint(){
+        window.print();
+    }
+</script>
+</html>

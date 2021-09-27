@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    @keyframes downchar{
+      0%{
+        
+       }
+      100%{
+        transform:translateX(80px);
+      }
+    }
+    @keyframes upchar{
+      0%{}
+      100%{
+        transform:translateX(-80px);
+      }
+    }
+   *{
+    margin:0;
+    padding:0;
+    }
+    .text-box{
+     text-align:center;
+     margin-top:80px;
+    }
+    .text-box p{
+     display:inline-block;
+     font-size:30px;
+     background-color:red;
+     padding:10px;
+     color:white;
+     font-weight:bolder;
+     box-shadow:3px 3px 3px rgba(0,0,0,0.7);
+    }
+    p:nth-child(even){
+     animation:downchar 2s alternate infinite;
+    }
+    p:nth-child(odd){
+     animation:upchar 2s alternate infinite;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="text-box">
+    <p>W</p>
+    <p>e</p>
+    <p>l</p>
+    <p>c</p>
+    <p>o</p>
+    <p>m</p>
+    <p>e</p>
+  </div>
+ </body>
+</html>
